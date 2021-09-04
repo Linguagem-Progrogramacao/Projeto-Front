@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.0/material.blue-light_blue.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <title>Login</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <style type="text/css">
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        
+        .mdl-grid {
+            margin-top: 15%;
+        }
+    </style>
+</head>
+
+<body class="mdl-color--grey-200" style=" 
+     background-repeat: no-repeat;  
+     width: 100%;
+     background-position: center center;
+     background-attachment: fixed;
+     background-size: cover;
+     height: auto;">
+
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="p-4" style="background-color: #3F076B;">
+                <h5 class="text-white h4">Oi, Cliente</h5>
+                <button type = "button" onclick = "window.location.href='/Users/fnosilveira/Downloads/PrototipoPagina/home.html'">Home</button>
+             	<button type = "button" onclick = "window.location.href='/Users/fnosilveira/Downloads/PrototipoPagina/cadastro_user.html'">Cadastrar usuário</button>
+                <button type = "button" onclick = "window.location.href='/Users/fnosilveira/Downloads/PrototipoPagina/index.html'">Sair</button>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark" style="background-color: #3F076B;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+    </div>
+    <section class="h-100">
+        <div class="container h-100">
+            <div class="row justify-content-sm-center h-100">
+                <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+                    <div class="text-center my-5">
+
+                    </div>
+                    <div class="card shadow-lg" style="border-radius:12px;">
+                        <div class="card-body p-5">
+                            <h1 class="fs-4 card-title fw-bold mb-4"></h1>
+                            <form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+                                <div class="mb-4">
+                                    <div class= "mb-2" style="text-align: center;font-size: 24px;">
+                                    	<label>Cadastro de novo usuário</label>
+                                    </div>
+                                    <label class="mb-2 text-muted" for="name">Nome</label>
+									<input id="name" type="name" class="form-control" name="nome" value="" required="" autofocus="" style="width:160px">
+									<label class="mb-2 text-muted" for="endereco">Endereço</label>
+									<input id="endereco" type="name" class="form-control" name="endereco" value="" required="" autofocus="" style="width:160px">
+									<label class="mb-2 text-muted" for="CEP">CEP</label>
+									<input id="CEP" type="name" class="form-control" name="CEP" value="" required="" autofocus="" style="width:160px">
+									<div style="text-align: center; padding:50px 0px 0px 0px">
+										<input type="button" value="Cadastrar" onclick="msg()">
+									</div>
+                            
+                                </div>
+
+
+                            </form>
+                        </div>
+                        <div class="card-footer py-3 border-0" style= "background-color:#3F076B;" >
+                        </div>
+                    </div>
+                </div>
+            <div class="text-center mt-5 text-muted" style="position:absolute;bottom:0;width:100%;margin-top: 10px; color:white;">
+                        Copyright © 2021
+            </div>
+            </div>
+        </div>
+    </section>
+   
+
+    <script>function msg() { alert("Usuario cadastrado"); } </script>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.1.0/material.min.js"></script>
+</body>
+
+
+
+</html>
